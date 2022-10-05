@@ -4,7 +4,7 @@ public class Producto {
 
     private Integer idProducto;
     private String nombreDeProducto;
-    private Double precio;
+    private Integer precio;
     private String detalle;
     private Integer cantidad;
     private String nivelDeToxi;
@@ -12,7 +12,7 @@ public class Producto {
     public Producto() {
     }
 
-    public Producto(Integer idProducto, String nombreDeProducto, Double precio, String detalle, Integer cantidad, String nivelDeToxi) {
+    public Producto(Integer idProducto, String nombreDeProducto, Integer precio, String detalle, Integer cantidad, String nivelDeToxi) {
         this.idProducto = idProducto;
         this.nombreDeProducto = nombreDeProducto;
         this.precio = precio;
@@ -37,11 +37,11 @@ public class Producto {
         this.nombreDeProducto = nombreDeProducto;
     }
 
-    public Double getPrecio() {
+    public Integer getPrecio() {
         return precio;
     }
 
-    public void setPrecio(Double precio) {
+    public void setPrecio(Integer precio) {
         this.precio = precio;
     }
 
@@ -71,13 +71,13 @@ public class Producto {
 
     @Override
     public String toString() {
-        return "Producto{" +
-                "idProducto=" + idProducto +
-                ", nombreDeProducto='" + nombreDeProducto + '\'' +
-                ", precio=" + precio +
-                ", detalle='" + detalle + '\'' +
-                ", cantidad=" + cantidad +
-                ", nivelDeToxi='" + nivelDeToxi + '\'' +
-                '}';
+        return "P R O D U C T O " +
+                "\n-------------------" +
+                "\n Serial De Producto= " + idProducto +
+                ", \n Nombre De Producto=' " + nombreDeProducto + '\'' +
+                ", \n Precio Del Producto= $ " + precio +
+                ", \n Detalle Del Producto=' " + detalle + '\'' +
+                ",\n Cantidad De unidades en stock= " + cantidad +
+                ",\n Nivel De Toxicidad=' " + nivelDeToxi + '\'' ;
     }
 }
